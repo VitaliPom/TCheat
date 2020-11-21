@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './enter-text.component.html',
   styleUrls: ['./enter-text.component.css']
 })
-export class EnterTextComponent implements OnInit {
-
+export class EnterTextComponent {
+  text :any;
   constructor() { }
 
-  ngOnInit(): void {
+  
+  onChange(){
+    
   }
-
 }

@@ -10,7 +10,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { EnterTextComponent } from './enter-text/enter-text.component';
 import {MatInputModule} from '@angular/material/input';
 import {TextFieldModule} from '@angular/cdk/text-field';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     MatButtonToggleModule,
     BrowserAnimationsModule,
     MatInputModule,
-    TextFieldModule
+    TextFieldModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
