@@ -10,11 +10,13 @@
         <form>
           <mat-form-field class="example-full-width">
             <mat-label>הכניסו טקסט</mat-label>
-            <textarea  matInput cdkTextareaAutosize placeholder="טקסט להצפנה" (ngModelChange)="onChange()" [(ngModel)]="text" name="enterText"></textarea>
+            <textarea  matInput cdkTextareaAutosize placeholder="טקסט להצפנה" [(ngModel)]="text" (ngModelChange)="onChange($event)"  name="enterText" ></textarea>
           </mat-form-field>
           </form>
-      {{text}}
+      
     </mat-card-content>
     
 </mat-card>
 </div>
+
+<app-encrypt-text [encryptedText]="encryptedText"></app-encrypt-text>

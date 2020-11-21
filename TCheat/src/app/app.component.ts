@@ -39,6 +39,7 @@ export class AppComponent implements OnInit{
   excersises = [] as any;
 
   ngOnInit(): void {
+    this.excersises.push({ot : " ", result: " ", ex: " "});
     this.alephbet.forEach(element => {
       var varA = Math.floor(Math.random()*20);
       var varB = Math.floor(Math.random()*20);

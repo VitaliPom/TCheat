@@ -11,10 +11,12 @@ import { EnterTextComponent } from './enter-text/enter-text.component';
 import {MatInputModule} from '@angular/material/input';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import { FormsModule } from '@angular/forms';
+import { EncryptTextComponent } from './enter-text/encrypt-text/encrypt-text.component';
 @NgModule({
   declarations: [
     AppComponent,
-    EnterTextComponent
+    EnterTextComponent,
+    EncryptTextComponent
   ],
   imports: [
     BrowserModule,

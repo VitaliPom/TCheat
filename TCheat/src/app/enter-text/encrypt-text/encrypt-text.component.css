@@ -1,0 +1,12 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+.encrypted-text-div{
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.right-side-text{
+    text-align: right;
+    
+}
