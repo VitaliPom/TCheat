@@ -1,0 +1,9 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.enter-text-div {
+  padding-top: 2vh;
+}
+
+.example-full-width {
+  width: 100%;
+}

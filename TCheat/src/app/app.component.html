@@ -1,13 +1,14 @@
-<h2  style="text-align: center;">{{title}}</h2>
-<div dir="rtl" class="example-card-div">
-    <mat-card class="example-card" dir="ltr"> 
-    <mat-card-header dir="rtl">
+<!-- <h2  style="text-align: center;">{{title}}</h2> -->
+<div dir="rtl">
+<div class="aleph-bet-card-div">
+    <mat-card class="aleph-bet-card" > 
+    <mat-card-header >
        <h2>
             אלף-בית
         </h2>
 
     </mat-card-header>
-    <mat-card-content dir="rtl">
+    <mat-card-content>
         <table>
             <tr>
                 <td style="padding: 2vh;"><table><tr *ngFor="let ex of excersises | slice:0:6"><td>{{ex['ot']}}={{ex['ex']}}</td></tr></table></td>
@@ -18,8 +19,10 @@
             </tr>
         </table>
     </mat-card-content>
-    <mat-card-actions dir="rtl" class="sizable"> 
-        <button mat-raised-button dir="rtl">לייק</button>
-      </mat-card-actions>
+    
 </mat-card>
+<app-enter-text></app-enter-text>
 </div>
+</div>
+
+

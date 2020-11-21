@@ -40,8 +40,8 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     this.alephbet.forEach(element => {
-      var varA = Math.floor(Math.random()*2000);
-      var varB = Math.floor(Math.random()*2000);
+      var varA = Math.floor(Math.random()*20);
+      var varB = Math.floor(Math.random()*20);
       var result = varA - varB;
       var ex = varA + "-" + varB;
       this.excersises.push({ot : element, result: result, ex: ex});

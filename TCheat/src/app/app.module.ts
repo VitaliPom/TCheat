@@ -7,10 +7,14 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { EnterTextComponent } from './enter-text/enter-text.component';
+import {MatInputModule} from '@angular/material/input';
+import {TextFieldModule} from '@angular/cdk/text-field';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EnterTextComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +22,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatCardModule,
     MatButtonModule,
     MatButtonToggleModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule,
+    TextFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,12 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
-.example-card {
+.aleph-bet-card {
     max-width: max-content;
   }
 
-.example-card-div {
+.aleph-bet-card-div {
   padding: 2vh;
+  display: inline-block;
+  direction: rtl;
 }
 
