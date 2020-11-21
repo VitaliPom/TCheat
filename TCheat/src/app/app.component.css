@@ -1,5 +1,10 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 .example-card {
-    max-width: 800px;
+    max-width: max-content;
   }
+
+.example-card-div {
+  padding: 2vh;
+}
+
