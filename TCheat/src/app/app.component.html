@@ -10,11 +10,11 @@
     <mat-card-content dir="rtl">
         <table>
             <tr>
-                <td style="padding: 2vh;"><table><tr *ngFor="let ot of alephbet | slice:0:6"><td>{{ot}}=77-71</td></tr></table></td>
-                <td style="padding: 2vh;"><table><tr *ngFor="let ot of alephbet | slice:6:12"><td>{{ot}}=77-71</td></tr></table></td>
-                <td style="padding: 2vh;"><table><tr *ngFor="let ot of alephbet | slice:12:18"><td>{{ot}}=77-71</td></tr></table></td>
-                <td style="padding: 2vh;"><table><tr *ngFor="let ot of alephbet | slice:18:24"><td>{{ot}}=77-71</td></tr></table></td>
-                <td style="padding: 2vh;"><table><tr *ngFor="let ot of alephbet | slice:24:30"><td>{{ot}}=77-71</td></tr></table></td>
+                <td style="padding: 2vh;"><table><tr *ngFor="let ex of excersises | slice:0:6"><td>{{ex['ot']}}={{ex['ex']}}</td></tr></table></td>
+                <td style="padding: 2vh;"><table><tr *ngFor="let ex of excersises | slice:6:12"><td>{{ex['ot']}}={{ex['ex']}}</td></tr></table></td>
+                <td style="padding: 2vh;"><table><tr *ngFor="let ex of excersises | slice:12:18"><td>{{ex['ot']}}={{ex['ex']}}</td></tr></table></td>
+                <td style="padding: 2vh;"><table><tr *ngFor="let ex of excersises | slice:18:24"><td>{{ex['ot']}}={{ex['ex']}}</td></tr></table></td>
+                <td style="padding: 2vh;"><table><tr *ngFor="let ex of excersises | slice:24:30"><td>{{ex['ot']}}={{ex['ex']}}</td></tr></table></td>
             </tr>
         </table>
     </mat-card-content>

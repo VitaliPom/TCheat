@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'TCheat';
   alephbet = [
     'א',
@@ -35,4 +35,17 @@ export class AppComponent {
     'ף',
     'ך',
   ];
+
+  excersises = [] as any;
+
+  ngOnInit(): void {
+    this.alephbet.forEach(element => {
+      var varA = Math.floor(Math.random()*2000);
+      var varB = Math.floor(Math.random()*2000);
+      var result = varA - varB;
+      var ex = varA + "-" + varB;
+      this.excersises.push({ot : element, result: result, ex: ex});
+    });
+    
+  }
 }
