@@ -30,10 +30,11 @@ export class AppComponent implements OnInit{
     'ר',
     'ש',
     'ת',
-    'ם',
-    'ץ',
-    'ף',
     'ך',
+    'ם',
+    'ן',
+    'ף',
+    'ץ',
   ];
 
   excersises = [] as any;
@@ -44,6 +45,21 @@ export class AppComponent implements OnInit{
       var varA = Math.floor(Math.random()*20);
       var varB = Math.floor(Math.random()*20);
       var result = varA - varB;
+      var exists = true;
+      while(exists){
+        exists = false;
+        this.excersises.forEach(element => {
+          if(element.result === result){
+            exists = true;
+          }
+        });
+        if(exists){
+          varB = Math.floor(Math.random()*20);
+          console.log("result was: "+result)
+          result = varA - varB;
+          console.log("result is: "+result)   
+        }
+      }
       var ex = varA + "-" + varB;
       this.excersises.push({ot : element, result: result, ex: ex});
     });
