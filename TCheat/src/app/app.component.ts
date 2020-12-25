@@ -55,9 +55,7 @@ export class AppComponent implements OnInit{
         });
         if(exists){
           varB = Math.floor(Math.random()*20);
-          console.log("result was: "+result)
           result = varA - varB;
-          console.log("result is: "+result)   
         }
       }
       var ex = varA + "-" + varB;
